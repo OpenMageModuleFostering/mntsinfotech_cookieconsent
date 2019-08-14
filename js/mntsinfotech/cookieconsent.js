@@ -21,8 +21,8 @@ function mntsinfotechDeleteCookie(cookieName) {
 	expire.setTime(today.getTime() - 3600000*24*90);
 	document.cookie = cookieName+"="+escape(cookieValue)+ ";expires="+expire.toGMTString();
 }
-function mntsinfotechAcceptCookies() {
-	mntsinfotechSetCookie('catAccCookies', true, 30);
+function mntsinfotechAcceptCookies(ndays) {
+	mntsinfotechSetCookie('catAccCookies', true, ndays);
 	jQuery("#mntsinfotech-cookie-bar").hide();
 	jQuery("html").css("margin-top","0");
 }

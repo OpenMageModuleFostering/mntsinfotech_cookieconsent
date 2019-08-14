@@ -65,9 +65,16 @@
             
             <message>
                 <message>This site uses cookies to improve your browsing experience. By continuing to use this site, you accept these cookies.</message>
-                
             </message>
-            
+            <general>
+                <enabled>1</enabled>
+                <lifetime>31</lifetime>
+            </general>
+            <link>
+                <enabled>0</enabled>
+                <linktext>View Cookie Policy</linktext>
+                <link>http://www.mntsinfotech.com</link>
+            </link>
         </mntsinfotechcookieconsent>
 
     </default>
