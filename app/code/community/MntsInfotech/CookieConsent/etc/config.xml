@@ -42,23 +42,7 @@
             </cookieconsent>
         </models>
     </global>
-    <adminhtml>
-        
-        <menu>
-            <mntsinfotechall translate="title" module="cookieconsent">
-                <title>MNTS Infotech</title>
-                <sort_order>71</sort_order>
-                <children>
-                    <cookieconsent translate="title" module="cookieconsent">
-                        <title>Cookie Consent Settings</title>
-                        <sort_order>5</sort_order>
-                        <action>admin/system_config/edit/section/mntsinfotechcookieconsent</action>
-                    </cookieconsent>
-                </children>
-            </mntsinfotechall>
-        </menu>
-        
-    </adminhtml>
+    
     <default>
 
         <mntsinfotechcookieconsent>
