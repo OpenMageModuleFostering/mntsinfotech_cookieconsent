@@ -1,0 +1,46 @@
+<config>
+    <modules>
+        <MntsInfotech_CookieConsent>
+            <version>0.1.1</version>
+        </MntsInfotech_CookieConsent>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <mntsinfotech_cookieconsent>
+                    <file>mntsinfotech_cookieconsent.xml</file>
+                </mntsinfotech_cookieconsent>
+            </updates>
+        </layout>
+        <events>
+            <core_block_abstract_prepare_layout_before>
+                <observers>
+                    <mntsinfotech_jquery_prepare_layout_before>
+                        <class>cookieconsent/observer</class>
+                        <method>prepareLayoutBefore</method>
+                    </mntsinfotech_jquery_prepare_layout_before>
+                </observers>
+            </core_block_abstract_prepare_layout_before>
+        </events>
+    </frontend>
+    <global>
+        <blocks>
+            <cookieconsent>
+                <class>MntsInfotech_CookieConsent_Block</class>
+            </cookieconsent>
+        </blocks>
+
+        <helpers>
+            <cookieconsent>
+                <class>MntsInfotech_CookieConsent_Helper</class>
+            </cookieconsent>
+        </helpers>
+
+        <models>
+            <cookieconsent>
+                <class>MntsInfotech_CookieConsent_Model</class>
+            </cookieconsent>
+        </models>
+    </global>
+    
+</config>

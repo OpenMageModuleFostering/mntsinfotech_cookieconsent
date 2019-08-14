@@ -1,0 +1,19 @@
+<script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(document).ready(function(){
+                if(!mntsinfotechReadCookie("catAccCookies")){//If the cookie has not been set
+                        jQuery("#mntsinfotech-cookie-bar").show();
+                }
+        });
+        
+         jQuery.noConflict();
+
+jQuery( document ).ready(function( $ ) {
+// You can use the locally-scoped $ in here as an alias to jQuery.
+// or change $ above to $j
+            if(!mntsinfotechReadCookie("catAccCookies")){//If the cookie has not been set
+                        $("#mntsinfotech-cookie-bar").show();
+                }
+});
+</script>
+<div id="mntsinfotech-cookie-bar">This site uses cookies to improve your browsing experience. By continuing to use this site, you accept these cookies.&nbsp;<button id="mntsinfotechCookie" tabindex=1 onclick="mntsinfotechAcceptCookies();" class="mnts_btn">Close</button></div>
