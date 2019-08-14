@@ -25,5 +25,5 @@ jQuery( document ).ready(function( $ ) {
                 }
 });
 </script>
-<div id="mntsinfotech-cookie-bar"><?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/message/message'); ?><?php if(Mage::getStoreConfig('mntsinfotechcookieconsent/link/enabled')==1 ){ ?>&nbsp;<a href="<?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/link/link'); ?>" target="_blank"><?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/link/linktext'); ?></a><?php } ?>&nbsp;<button id="mntsinfotechCookie" tabindex=1 onclick="mntsinfotechAcceptCookies(<?php echo $ncookiedays; ?>);" class="mnts_btn">Close</button></div>
+<div id="mntsinfotech-cookie-bar"><?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/message/message'); ?><?php if(Mage::getStoreConfig('mntsinfotechcookieconsent/link/enabled')==1 ){ ?>&nbsp;<a href="<?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/link/link'); ?>" target="_blank"><?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/link/linktext'); ?></a><?php } ?>&nbsp;<button id="mntsinfotechCookie" tabindex=1 onclick="mntsinfotechAcceptCookies(<?php echo $ncookiedays; ?>);" class="mnts_btn"><?php echo __('Close'); ?></button></div>
 <?php } ?>
