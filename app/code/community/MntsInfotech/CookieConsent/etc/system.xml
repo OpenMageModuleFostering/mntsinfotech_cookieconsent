@@ -1,0 +1,46 @@
+<config>
+    <tabs>
+        <mntsinfotechconfig translate="label comment" module="cookieconsent">
+            <label>MNTS Infotech</label>
+            <sort_order>0</sort_order>
+        </mntsinfotechconfig>
+    </tabs>
+    <sections>
+
+        <mntsinfotechcookieconsent translate="label comment" module="cookieconsent">
+            <label>Cookie Consent</label>
+            <tab>mntsinfotechconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>99999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+
+                <message translate="label comment" module="cookieconsent">
+                    <label>Message / Notice</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <message translate="label comment" module="cookieconsent">
+                            <label>Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </message>
+                        
+                    </fields>
+                </message>
+
+            </groups>
+
+        </mntsinfotechcookieconsent>
+
+    </sections>
+</config>

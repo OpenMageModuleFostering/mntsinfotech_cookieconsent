@@ -16,4 +16,4 @@ jQuery( document ).ready(function( $ ) {
                 }
 });
 </script>
-<div id="mntsinfotech-cookie-bar">This site uses cookies to improve your browsing experience. By continuing to use this site, you accept these cookies.&nbsp;<button id="mntsinfotechCookie" tabindex=1 onclick="mntsinfotechAcceptCookies();" class="mnts_btn">Close</button></div>
+<div id="mntsinfotech-cookie-bar"><?php echo Mage::getStoreConfig('mntsinfotechcookieconsent/message/message'); ?>&nbsp;<button id="mntsinfotechCookie" tabindex=1 onclick="mntsinfotechAcceptCookies();" class="mnts_btn">Close</button></div>
