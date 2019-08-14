@@ -1,12 +1,12 @@
 {
     "name": "OpenMageModuleFostering/MntsInfotech_CookieConsent",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Responsive Cookie Consent is simple and responsive extension to display the message for cookie usage  by site.",
+    "description": "Responsive Cookie Consent is simple and responsive extension to display the message for cookie usage by site.",
     "authors": [
     {
-        "name": "sukhvir kushwah",
+        "name": "Sukhvir Kushwah",
         "email": "kushwahsukhvir@gmail.com"
     }
 ],

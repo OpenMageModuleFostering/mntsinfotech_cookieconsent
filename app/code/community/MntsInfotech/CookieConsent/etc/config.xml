@@ -1,7 +1,7 @@
 <config>
     <modules>
         <MntsInfotech_CookieConsent>
-            <version>0.1.5</version>
+            <version>0.1.6</version>
         </MntsInfotech_CookieConsent>
     </modules>
     <frontend>
@@ -42,11 +42,8 @@
             </cookieconsent>
         </models>
     </global>
-    
     <default>
-
         <mntsinfotechcookieconsent>
-            
             <message>
                 <message>This site uses cookies to improve your browsing experience. By continuing to use this site, you accept these cookies.</message>
             </message>
@@ -59,6 +56,9 @@
                 <linktext>View Cookie Policy</linktext>
                 <link>http://www.mntsinfotech.com</link>
             </link>
+            <speed>
+                <enabled>0</enabled>
+            </speed>
         </mntsinfotechcookieconsent>
 
     </default>

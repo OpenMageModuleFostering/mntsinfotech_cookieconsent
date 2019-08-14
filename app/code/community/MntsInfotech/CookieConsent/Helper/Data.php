@@ -1,13 +1,4 @@
 <?php
-
-/**
- * Optimiseweb CookieNotice Helper Data
- *
- * @package     Optimiseweb_CookieNotice
- * @author      Kathir Vel (sid@optimiseweb.co.uk)
- * @copyright   Copyright (c) 2014 Optimise Web
- * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- */
 class MntsInfotech_CookieConsent_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /**
@@ -25,10 +16,13 @@ class MntsInfotech_CookieConsent_Helper_Data extends Mage_Core_Helper_Abstract
    );
    
    public function getFiles(){
-       return $this->_files;
+      if(Mage::getStoreConfig('mntsinfotechcookieconsent/speed/enabled')==1) {
+        unset($this->_files[0]);
+      }
+      return $this->_files;
    }
    
    public function getJQueryPath($file){
-       return "mntsinfotech/".$file.".js";
+       return "js/mntsinfotech/".$file.".js";
    }
 }

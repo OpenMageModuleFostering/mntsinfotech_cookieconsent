@@ -6,7 +6,6 @@
         </mntsinfotechconfig>
     </tabs>
     <sections>
-
         <mntsinfotechcookieconsent translate="label comment" module="cookieconsent">
             <label>Cookie Consent</label>
             <tab>mntsinfotechconfig</tab>
@@ -15,7 +14,6 @@
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
-
             <groups>
                 <general translate="label comment" module="cookieconsent">
                     <label>General</label>
@@ -102,14 +100,28 @@
                             <show_in_store>1</show_in_store>
                             <depends><enabled>1</enabled></depends>
                         </linktext>
-                        
                     </fields>
                 </link>
-                
-
+                <speed translate="label comment" module="cookieconsent">
+                    <label>Speed</label>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment" module="cookieconsent">
+                            <label>Use existing jQuery?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Please select "Yes" if you want to use current theme's jQuery instead of using plugin's external one. This way Mangento will have to include less js files and it will improve speed. Please test this functionality properly after enabling/disabling this.</comment>
+                        </enabled>
+                    </fields>
+                </speed>
             </groups>
-
         </mntsinfotechcookieconsent>
-
     </sections>
 </config>
