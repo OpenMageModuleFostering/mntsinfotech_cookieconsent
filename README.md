@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Responsive Cookie Consent is simple and responsive extension to display the message for cookie usage by site.
